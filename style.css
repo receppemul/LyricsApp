@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100vh;
+}
+
+.row .col:nth-child(1) {
+    background-color: #34495e;
+}
+.row .col:nth-child(2) {
+    overflow-y: scroll;
+}
+
+h2 {
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.form-control {
+    text-align: center;
+    padding: 8px;
+}
+
+input {
+    margin: 0 auto;
+    width: 80%;
+    height: 25px;
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 4px;
+    outline:none;
+}
+
+input:focus {
+    border: 1px solid #009edc;
+    box-shadow: 0 0 5px rgba(0, 40, 220, 0.4);
+}
+
+#find-lyrics {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #e74c3c;
+    border-radius: 2px;
+    background: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+#song-lyrics {
+    margin: 0;
+    white-space: pre;
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+}
